@@ -1,3 +1,2 @@
 #!/bin/sh
-cd ~/tmp
-mk dir 6-firstdirectory
+mk dir ./tmp/6-firstdirectory
