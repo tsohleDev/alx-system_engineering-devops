@@ -1,6 +1,2 @@
-#!/bin/sh
-ls -a
-cd ..
-ls -a
-cd \boot
-ls -a
+#!/bin/bash
+ls -al . .. /boot
