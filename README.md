@@ -1,2 +1,3 @@
-# alx-system_engineering-devops
-ALX System Engineering-DevOps is a GitHub repository containing projects, assignments, and tasks related to the field of DevOps and System Engineering.
+# Alx System Engineering Devops
+
+This is a GitHub repository for the ALX System Engineering DevOps program. It contains various projects, assignments, and code samples related to system administration, network engineering, and DevOps practices. This repository is designed to help learners gain hands-on experience in various areas of system administration and software engineering, using industry-standard tools and technologies. Whether you are a beginner or an experienced engineer, this repository offers a great opportunity to improve your skills and knowledge in the field of DevOps and system administration.
