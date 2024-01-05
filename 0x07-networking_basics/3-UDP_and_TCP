@@ -1,0 +1,8 @@
+Which statement is correct for the TCP box:
+- It is a protocol that transferes data slowely but surely
+
+Which statement is correct for the UDP box:
+- It is a protocol that is transferring data in a fast way and might loss data along in the process
+
+Which statement is correct for the TCP worker:
+- Have you received boxes x, y, z?
