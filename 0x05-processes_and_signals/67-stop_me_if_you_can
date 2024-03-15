@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Kill a prcess 7.highlander with pkill because it has a trap SIGTERM
+
+pkill -f 7.highlander

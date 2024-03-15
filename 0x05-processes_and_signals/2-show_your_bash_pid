@@ -2,5 +2,5 @@
 # displays lines containing the bash word,
 # shellcheck disable=SC2009
 
-ps -a ux | grep bash
+ps -A ux | grep bash
 
