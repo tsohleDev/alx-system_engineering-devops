@@ -2,3 +2,4 @@
 
 #Script that displays all listening sockets 
 netstat -lp
+
