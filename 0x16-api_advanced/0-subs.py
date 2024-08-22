@@ -5,7 +5,7 @@ Get number of users from Reddit
 
 import requests
 
-def get_subreddit_subscribers(subreddit):
+def number_of_subscribers(subreddit):
     # Define the URL for the subreddit
     url = f"https://www.reddit.com/r/{subreddit}/about.json"
     
