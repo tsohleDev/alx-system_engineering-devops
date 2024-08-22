@@ -10,7 +10,14 @@ def get_subreddit_subscribers(subreddit):
     url = f"https://www.reddit.com/r/{subreddit}/about.json"
     
     # Set the User-Agent to avoid request being blocked by Reddit
-    headers = {'User-Agent': 'Mozilla/5.0'}
+    headers = {
+        'User-Agent': 'YourAppName/1.0 (by u/YourRedditUsername)',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.5',
+        'Connection': 'keep-alive',
+        'DNT': '1',  # Do Not Track request header
+        'Upgrade-Insecure-Requests': '1',
+    }
     
     try:
         # Make the request to Reddit API
