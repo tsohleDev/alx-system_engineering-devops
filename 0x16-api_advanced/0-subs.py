@@ -1,23 +1,26 @@
 #!/usr/bin/python3
-"""Function that queries the Reddit AP"""
-import requests
-import sys
+"""
+Get number of users from Reddit
+"""
 
+import requests
 
 def number_of_subscribers(subreddit):
-    u_agent = 'Mozilla/5.0'
+    """Returns the number of subscribers to a given subreddit.
 
-    headers = {
-        'User-Agent': u_agent
-    }
+    Args:
+        subreddit (str): The name of the subreddit.
 
-    url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
-    res = requests.get(url, headers=headers, allow_redirects=False)
-    if res.status_code != 200:
-        return 0
-    dic = res.json()
-    if 'data' not in dic:
-        return 0
-    if 'subscribers' not in dic.get('data'):
-        return 0
-    return res.json()['data']['subscribers']
+    Returns:
+        int: The number of subscribers if the subreddit is valid, otherwise 0.
+    """
+    url = 'https://www.reddit.com/r/{}/about.json'.format(subreddit)
+    headers = {'user-agent': 'Mozilla/5.0'}
+    response = requests.get(url, headers=headers, allow_redirects=False)
+    if response.status_code != 200:
+         return 0
+    data = response.json()
+    if not data:
+         return 0
+    return data['data']['subscribers']
+        
